@@ -13,9 +13,8 @@ function App() {
 
   return (
     <div className="App" >
-     
-         
-       <Navbar1/>
+     <BrowserRouter>
+     <Navbar1/>
        <Routes>
          <Route path='/' element={<Calcul/>}/>
          <Route path='/tp2' element={<Slider/>}/>
@@ -24,6 +23,7 @@ function App() {
          <Route path='/tp5' element={ <Context><TogglerLang/><Content/></Context>}/>
          <Route path='*' element={<h1>Not Found</h1>}/>
        </Routes>
+     </BrowserRouter>
 
     
     
