@@ -4,8 +4,8 @@ import "./Navbar.css"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import ThemeContextProvider from '../context/themeContext';
-import BtnToggler from '../componet/btnToggler/btnToggler/btnToggler';
+
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,27 +16,25 @@ export default function Navbar1() {
 
  return (
 
-    <Navbar expand="lg" className='bg-dark btn-light ' >
+    <Navbar expand="lg" className='bg-dark btn-light ' style={{padding:"30px"}}>
   
       <Container>
      
-     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{position:"relative",left:"400px"}} />
-     <Navbar.Collapse id="basic-navbar-nav"  >
+    <Navbar.Toggle aria-controls="" style={{backgroundColor:"lightblue",position:"absolute",right:"10px",top:"10px"}} />
+     <Navbar.Collapse id="basic-navbar-nav">
        <Nav className="me-10" >
-         <Nav.Link href="/"><p style={{color:"lightblue"}}>calcul</p></Nav.Link>
-         <Nav.Link href="/tp2"><p style={{color:"lightblue",marginLeft:"40px"}}>slider</p></Nav.Link>
-         <Nav.Link href="/tp3"><p style={{color:"lightblue",marginLeft:"40px"}}>todolis</p></Nav.Link>
-         <Nav.Link href="/tp4"><p style={{color:"lightblue",marginLeft:"40px"}}>pagination</p></Nav.Link>
-         <Nav.Link href="/tp5"><p style={{color:"lightblue",marginLeft:"40px"}}>multilang</p></Nav.Link>
+         <Link to="/" style={{textDecoration:"none"}}><p style={{color:"lightblue"}}>calcul</p></Link>
+         <Link to="/slide" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>slider</p></Link>
+         <Link to="/todolist" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>todolis</p></Link>
+         <Link to="/pagination" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>pagination</p></Link>
+         <Link to="/multilang" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>multilang</p></Link>
 
        </Nav>
      </Navbar.Collapse>
-     <ThemeContextProvider>
-          <BtnToggler/>
-        </ThemeContextProvider>
+ 
 
    </Container>
-     
+   
 
   </Navbar>
  )

@@ -7,23 +7,29 @@ import Navbar1 from './navBar/Navbar';
 import Slider from './slider/Slider';
 import Form from './todList/form';
 import Pagination from './Api/PaginationApi';
+import ThemeContextProvider from './context/themeContext';
+import BtnToggler from './componet/btnToggler/btnToggler/btnToggler';
 
 
 function App() {
 
   return (
     <div className="App" >
-     <BrowserRouter>
+
      <Navbar1/>
        <Routes>
          <Route path='/' element={<Calcul/>}/>
-         <Route path='/tp2' element={<Slider/>}/>
-         <Route path='/tp3' element={<Form/>}/>
-         <Route path='/tp4' element={<Pagination/>}/>
-         <Route path='/tp5' element={ <Context><TogglerLang/><Content/></Context>}/>
+         <Route path='/slide' element={<Slider/>}/>
+         <Route path='/todolist' element={<Form/>}/>
+         <Route path='/pagination' element={<Pagination/>}/>
+         <Route path='/multilang' element={ <Context><TogglerLang/><Content/></Context>}/>
          <Route path='*' element={<h1>Not Found</h1>}/>
        </Routes>
-     </BrowserRouter>
+
+    
+       <ThemeContextProvider>
+          <BtnToggler/>
+      </ThemeContextProvider>
 
     
     

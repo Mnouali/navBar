@@ -18,7 +18,7 @@ export default function BtnToggler({children}) {
     <div >
         
         <div>
-           <button style={{borderRadius:"100px",height:"40px"}}  onClick={toggleTheme} className={theme?"btn-toggle dark-btn":"btn-toggle"}>
+           <button style={{borderRadius:"100px",height:"40px",position:"fixed",right:"10px",top:"100px"}}  onClick={toggleTheme} className={theme?"btn-toggle dark-btn":"btn-toggle"}>
                  {theme ? "LIGHT" : "DARK"}
            </button>
         </div>
