@@ -48,10 +48,12 @@ const pageination=(numbreOfPage)=>{
                 return <li  className='border d-flex justify-content-between align-item-center p-2 w-20'> {item.title} <br/></li>
             })}
         </ul>
+        
+         </div >
+      <div style={{position:"fixed",bottom:"10px"}}>
         <input className='btn btn-success mt-2' type='button' value='previous' onClick={previous}/>
         <input className='btn btn-primary mt-2 ms-1'  type='button' value='next' onClick={next}/>
-         </div>
-       
+      </div>
     </div>
   )
 }
