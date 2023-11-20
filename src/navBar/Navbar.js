@@ -23,7 +23,7 @@ export default function Navbar1() {
     <Navbar.Toggle aria-controls="" style={{backgroundColor:"lightblue",position:"absolute",right:"10px",top:"10px"}} />
      <Navbar.Collapse id="basic-navbar-nav">
        <Nav className="me-10" >
-         <Link to="/" style={{textDecoration:"none"}}><p style={{color:"lightblue"}}>calcul</p></Link>
+         <Link to="/" style={{textDecoration:"none"}}><p style={{color:"lightblue" marginLeft:"40px"}}>calcul</p></Link>
          <Link to="/slide" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>slider</p></Link>
          <Link to="/todolist" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>todolis</p></Link>
          <Link to="/pagination" style={{textDecoration:"none"}}><p style={{color:"lightblue",marginLeft:"40px"}}>pagination</p></Link>
