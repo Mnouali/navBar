@@ -21,6 +21,7 @@ function App() {
          <Route path='/tp3' element={<Form/>}/>
          <Route path='/tp4' element={<Pagination/>}/>
          <Route path='/tp5' element={ <Context><TogglerLang/><Content/></Context>}/>
+         <Route path='*' element={<h1>Not Found</h1>}/>
        </Routes>
        </BrowserRouter>
     
