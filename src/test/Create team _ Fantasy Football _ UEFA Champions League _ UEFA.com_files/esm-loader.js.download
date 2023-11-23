@@ -1,0 +1,5 @@
+const url = new URL(document.currentScript.src);
+const script = document.createElement('script');
+script.type = 'module';
+script.src = `${url.origin}/panenka/panenka.esm.js`;
+document.head.appendChild(script);

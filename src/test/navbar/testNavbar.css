@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+  width: 60px;
+  height: 40px;
+  margin-top:5px;
+}
+menu{
+  display: flex;
+  justify-content: space-around;
+}
+header{
+    background-color:  rgb(4, 18, 45);
+    color:white;
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    
+
+   
+}
+h1{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+}
+ 
+nav ul .NavIl{
+  padding:5px 10px 0 10px;
+}
+.navChow{
+    margin-top: 0px;
+     display: flex;
+     justify-content: center;
+}
+.navHidden{
+    visibility: hidden;
+    opacity: 0;
+}
+nav ul li:hover{
+    background-color:rgb(4, 18, 45) ;
+    color: white;
+    border-radius: 5px;
+    
+}
+.iconMen{
+  float: right;
+  margin-top: 0px;
+  visibility: hidden;
+  opacity: 0;
+}
+.div1{
+   display: flex;
+  
+}
+.div1 li{
+  padding: 6px;
+}
+@media screen and (max-width: 992px) {
+      header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      menu{
+        visibility: hidden;
+        opacity: 0;
+      }
+     .iconMen{
+        float: right;
+        margin-top: 0px;
+        visibility: visible;
+        opacity: 1;
+ 
+      }
+      h1{
+        text-align: left;
+    }
+      nav{
+        position: fixed;
+        right: 1px;
+        top: 65px;
+        width: 200px;
+        background-color: rgb(4, 18, 45);
+       
+        
+        
+
+      }
+ 
+      nav ul{
+        display: block;
+        color: black;
+        background-color:  rgb(4, 18, 45);
+        width: 200px;
+        height: 490px;
+        margin-top: 20px;
+   
+        
+
+        
+       
+      
+    }
+    nav ul li{
+        color: white;
+        margin-top: 10px;
+    }
+    .div1{
+      display: block;
+     
+   }
+   .div1 li{
+     padding-left:10px;
+     padding-left: 10px;
+     margin-top: 15px;
+   }
+    nav ul li:hover{
+        background-color:   white ;
+        color: rgb(4, 18, 45);
+        border-radius: 2px;
+        
+    }
+   
+   
+ 
+   
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1002px) {
+
+    .navHidden{
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+  
+ }

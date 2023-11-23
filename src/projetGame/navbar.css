@@ -1,0 +1,10 @@
+.Nav1{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Nav1:hover{
+
+     color:bisque;
+     background-size: 40px;
+}
